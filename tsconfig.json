@@ -1,10 +1,20 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "jsx": "react-jsx",
+    "types": [
+      "vite/client", 
+      "vite-plugin-svgr/client"
+    ],
     "lib": [
       "es2017",
       "dom"
     ],
+    "paths": {
+      "components": [
+        "./components"
+      ]
+    },
     "module": "commonjs",
     "target": "ES6",
     "declaration": true,
@@ -28,12 +38,6 @@
     "src/test",
     "example_app"
   ],
-  "baseUrl": "src",
-  "paths": {
-    "components": [
-      "./components"
-    ]
-  },
   "include": [
     "src"
   ]
