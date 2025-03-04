@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import Datez from 'datez';
+import Datez from './datez';
 
 //
 // Support for local datetime, timezones and floating times

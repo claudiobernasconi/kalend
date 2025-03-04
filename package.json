@@ -22,9 +22,9 @@
   },
   "dependencies": {
     "color": "4.2.3",
-    "datez": "0.0.8",
     "dequal": "2.0.3",
-    "luxon": "3.2.1"
+    "luxon": "3.2.1",
+    "timezone-soft": "^1.5.2"
   },
   "devDependencies": {
     "@types/color": "3.0.3",

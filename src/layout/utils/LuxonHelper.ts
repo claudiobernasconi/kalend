@@ -1,6 +1,6 @@
 import { DateTime, DurationObjectUnits } from 'luxon';
 import { FLOATING_DATETIME, UTC_TIMEZONE } from '../constants';
-import Datez from 'datez';
+import Datez from '../../utils/datez';
 
 export const LuxonHelper: any = {
   isSameDay: (dateA: DateTime, dateB: DateTime): boolean => {

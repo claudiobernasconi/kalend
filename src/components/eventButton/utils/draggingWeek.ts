@@ -10,7 +10,7 @@ import {
   getHourHeightPartialUnit,
 } from '../../daysViewTable/daysViewOneDay/DaysViewOneDay';
 import { isEventFloating } from '../../../layout/utils/Helper';
-import Datez from 'datez';
+import Datez from '../../../utils/datez';
 
 export const calculateNewTimeWeekDay = (
   offsetTopValue: number,

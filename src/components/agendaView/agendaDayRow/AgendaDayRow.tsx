@@ -6,9 +6,9 @@ import { EVENT_TYPE } from '../../../common/enums';
 import { parseCssDark } from '../../../utils/common';
 import { useContext, useEffect } from 'react';
 import DateWeekDay from '../../dateWeekDay/DateWeekDay';
-import Datez from 'datez';
 import DayOfWeekText from '../../dayOfWeekText/DayOfWeekText';
 import EventButton from '../../eventButton/EventButton';
+import Datez from '../../../utils/datez';
 
 const renderEvents = (events: CalendarEvent[], timezone: string) => {
   if (!events || events.length === 0) {

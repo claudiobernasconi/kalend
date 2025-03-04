@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
 import { getCurrentTime } from './common';
-import Datez from 'datez';
+import Datez from './datez';
 //
 // Support for local datetime, timezones and floating times
 //
