@@ -1,6 +1,6 @@
 {
-  "name": "kalend",
-  "version": "0.17.6",
+  "name": "kalend-evo",
+  "version": "0.20.0",
   "author": "Claudio Bernasconi",
   "license": "MIT",
   "private": false,
@@ -71,7 +71,10 @@
     "lint": "eslint . --ext ts --ext tsx"
   },
   "keywords": [
-    "javascript"
+    "javascript",
+    "typescript",
+    "react",
+    "calendar"
   ],
   "browserslist": {
     "production": [
