@@ -1,40 +1,36 @@
-# Kalend - calendar component for React
+# Kalend - A Simple Calendar Component for React
 
 - multiple views (day, three days, week, month, agenda)
 - events
 - drag and drop (only mouse events)
 - mobile friendly
 
-### Versioning
-Until stable version 1 updates might include breaking changes  
-
-**Breaking changes**:
-- 0.6.5 -> 0.7.0 - Kalend now accepts only array of events, you don't need to format them to dates like before
-    
-# Links
-### Documentation: https://docs.kalend.org
-
-### LIVE demo: https://demo.kalend.org
-
-#
-
 ![Alt text](screenshot.png?raw=true 'Title')
 
-#
+### React support
+- Kalend supports React 19
 
-If given interface and controls is not enough for you, you can use callbacks to access internal state and expand the functionality of your ui.
+### Versioning & History
+- [Changelog](/CHANGELOG.md) & [Changelog Archive](/CHANGELOG_ARCHIVE.md)
+- This project was originally developed by nibdo and forked after it was abandoned for over 2 years.
+- The original package is available as [kalend](https://www.npmjs.com/package/kalend) (v.0.1.3 - v.0.17.6) while current versions are published as [kalend-evo](https://www.npmjs.com/package/kalend-evo) (starting with v.0.20.0).
+- Until stable version 1 updates might include breaking changes. 
+    
+### Documentation
+[tbd]
 
-If you have any suggestion, feel free to open discussion or contact me directly at hello@nibdo.com
+### LIVE demo
+[tbd]
 
 # Install
-```
-npm i kalend
+```bash
+npm install kalend-evo
 ```
 # Example
 
 ```js
-import Kalend, { CalendarView } from 'kalend' // import component
-import 'kalend/dist/styles/index.css'; // import styles
+import Kalend, { CalendarView } from 'kalend-evo' // import component
+import 'kalend-evo/dist/styles/index.css'; // import styles
 
 function App() {
   return (
@@ -69,8 +65,8 @@ Before passing events to calendar, adjust data to this format:
 const events = [
     {
         id: 1,
-        startAt: '2021-11-21T18:00:00.000Z',
-        endAt: '2021-11-21T19:00:00.000Z',
+        startAt: '2024-11-21T18:00:00.000Z',
+        endAt: '2024-11-21T19:00:00.000Z',
         timezoneStartAt: 'Europe/Berlin', // optional
         summary: 'test',
         color: 'blue',
@@ -78,21 +74,21 @@ const events = [
     },
     {
         id: 2,
-        startAt: '2021-11-21T18:00:00.000Z',
-        endAt: '2021-11-21T19:00:00.000Z',
+        startAt: '2024-11-21T18:00:00.000Z',
+        endAt: '2024-11-21T19:00:00.000Z',
         timezoneStartAt: 'Europe/Berlin', // optional
         summary: 'test',
         color: 'blue'
     }
 ]
 ```
-According to your needs, you can set timezone for each event and also set default timezone with "timezone" prop in IANA format.
-If you don't provide timezone prop, your system default timezone will be used.
+According to your needs, you can set the timezone for each event and also set the default timezone with the "timezone" prop in IANA format.
+If you don't provide a timezone prop, your system's default timezone will be used.
 
-You can keep other event properties, those will be ignored.
+You can keep other event properties; those will be ignored.
 
 ### Troubleshooting
 
-#### Q: Calendar does not show timetable
+#### The Calendar Does Not Show a Timetable
 
-A: Your parent element has to have some height, so Kalend will inherit it and fit accordingly. For more information, refer to issue https://github.com/nibdo/kalend/issues/84#issuecomment-1003228182
+Your parent element has to have some height, so Kalend will inherit it and fit accordingly.
