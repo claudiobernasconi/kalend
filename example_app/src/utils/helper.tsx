@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import faker from 'faker';
+import { faker } from '@faker-js/faker';
 import { v4 } from 'uuid';
 
 const colors: string[] = [
@@ -33,7 +33,7 @@ export const generateDemoEvents = (
     .toFormat('yyyy-MM-dd');
 
   for (let i = 1; i < count; i += 1) {
-    const dateStart: any = faker.date.between(start, end);
+    const dateStart: any = faker.date.between({from: start, to: end});
 
     const hour: number = Math.floor(Math.random() * 23) + 1;
     const minute: number = Math.floor(Math.random() * 40) + 1;

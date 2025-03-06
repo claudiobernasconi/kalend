@@ -11,23 +11,22 @@
     "url": "https://github.com/nibdo/kalend/tree/main/example_app"
   },
   "dependencies": {
-    "faker": "5.5.3",
+    "@faker-js/faker": "^9.5.1",
     "kalend": "0.17.6",
-    "luxon": "3.2.1",
+    "luxon": "^3.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router": "6.7.0",
     "react-router-dom": "6.7.0",
-    "typescript": "4.9.4",
-    "uuid": "9.0.0"
+    "typescript": "^5.8.2",
+    "uuid": "11.1.0"
   },
   "devDependencies": {
-    "@types/faker": "5.5.9",
-    "@types/luxon": "3.2.0",
-    "@types/node": "18.11.18",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.13.9",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
-    "@types/uuid": "9.0.0",
+    "@types/uuid": "10.0.0",
     "@typescript-eslint/eslint-plugin": "5.48.2",
     "@typescript-eslint/parser": "5.48.2",
     "@vitejs/plugin-react-swc": "3.8.0",
@@ -37,7 +36,6 @@
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.8.3",
     "sass": "1.85.1",
-    "tsconfig-paths": "4.1.2",
     "vite": "6.2.0",
     "vite-plugin-svgr": "4.3.0",
     "vite-tsconfig-paths": "5.1.4"
