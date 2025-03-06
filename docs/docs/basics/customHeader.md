@@ -15,7 +15,7 @@ You can find working example in
 Pass ref ```kalendRef``` from ```useRef()``` to Kalend as prop to access navigation functions. 
 You will need also pass props ```selectedView``` and ```selectedDate``` to Kalend.
 
-Live example can be found here https://demo.kalend.org/custom
+Live example can be found here https://kalend-demo.azurewebsites.net
 
 ### Example
 

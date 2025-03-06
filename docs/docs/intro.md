@@ -17,7 +17,7 @@ Until stable version 1 updates might include breaking changes.
 **Breaking changes**:
 - 0.6.5 -> 0.7.0 - Kalend now accepts only array of events, you don't need to format them to dates like before
 
-### LIVE DEMO: https://demo.kalend.org
+### LIVE DEMO: https://kalend-demo.azurewebsites.net
 
 ## Getting Started
 
