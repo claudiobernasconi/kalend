@@ -11,6 +11,7 @@ web
 #example_app
 /example_app/node_modules
 /example_app/build
+/example_app/dist
 
 #docs
 /docs/node_modules
