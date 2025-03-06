@@ -1,9 +1,10 @@
-const gulp = require('gulp');
+const { src, dest } = require("gulp");
 const concat = require('gulp-concat');
 
-gulp.task('default', function () {
-  return gulp
-    .src('./build/dist/styles/**/*.css')
+function build() {
+    return src('./build/dist/styles/**/*.css')
     .pipe(concat('index.css'))
-    .pipe(gulp.dest('./build/dist/styles'));
-});
+    .pipe(dest('./build/dist/styles'));
+}
+
+exports.default = build;
