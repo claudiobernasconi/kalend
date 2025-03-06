@@ -21,10 +21,10 @@ The documentation was rescued from the abandoned project and updated as best eff
 
 Please open an issue/pull request if you find anything wrong/outdated in the documentation.
 
-[tbd]
+https://kalend-docs.azurewebsites.net
 
 ### LIVE demo
-[tbd]
+https://kalend-demo.azurewebsites.net
 
 # Install
 ```bash

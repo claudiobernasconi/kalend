@@ -21,7 +21,7 @@ This changelog contains the versions originally published by nibdo. Refer to the
 - fixed task icon position
 
 ## 0.17.0
-- added task event type (https://docs.kalend.org/docs/basics/events)
+- added task event type (https://kalend-docs.azurewebsites.net/docs/basics/events)
 - added option to disable resizing event with prop ```resizeDisabledConditions```
 - fixed wrong result when dragging event with floating timezone 
 
