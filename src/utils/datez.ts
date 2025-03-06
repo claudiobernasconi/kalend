@@ -8,7 +8,7 @@ interface DateZoneData {
 class Datez {
     static fromFormat(baseDate: string, format: string, data: DateZoneData): DateTime {
         const { zone } = data;
-        let date = DateTime.fromFormat(baseDate, format, {
+        const date = DateTime.fromFormat(baseDate, format, {
             zone,
         });
 
@@ -27,7 +27,7 @@ class Datez {
 
     static fromDate(baseDate: Date, data: DateZoneData): DateTime {
         const { zone } = data;
-        let date = DateTime.fromJSDate(baseDate, {
+        const date = DateTime.fromJSDate(baseDate, {
             zone,
         });
 
@@ -46,7 +46,7 @@ class Datez {
 
     static fromISO(baseDate: string, data: DateZoneData): DateTime {
         const { zone } = data;
-        let date = DateTime.fromISO(baseDate, {
+        const date = DateTime.fromISO(baseDate, {
             zone,
         });
 
@@ -64,7 +64,7 @@ class Datez {
     }
 
     static setZone(date: DateTime, zone: string): DateTime {
-        let result = date.setZone(zone);
+        const result = date.setZone(zone);
 
         if (result.invalidReason === 'unsupported zone') {
             const softedTimezone = getSoftTimezone(zone);

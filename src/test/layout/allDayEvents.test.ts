@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+ 
 
 import { CalendarEvent } from '../../layout';
 import { TEST_TIMEZONE } from './common';

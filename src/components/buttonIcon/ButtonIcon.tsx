@@ -1,4 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-use-before-define
+ 
 import React, { useState } from 'react';
 
 import { ButtonIconProps } from './ButtonIcon.props';

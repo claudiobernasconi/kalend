@@ -8,7 +8,7 @@ import { filterEventsByCalendarIDs } from '../utils/eventLayout';
 import { useContext, useEffect, useState } from 'react';
 import { useDeepCompareEffect } from '../utils/useDeepCompareEffect';
 
-// eslint-disable-next-line @typescript-eslint/no-empty-function
+ 
 const emptyFunction = () => {};
 
 const parseTimeFormat = (

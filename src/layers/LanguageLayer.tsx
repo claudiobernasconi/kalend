@@ -39,7 +39,7 @@ const LanguageLayer = (props: {
 }) => {
   const { language, customLanguage } = props;
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+   
   const [store, dispatch]: [Store, any] = useContext(Context);
   const setContext = (type: string, payload: any) => {
     dispatch({ type, payload });

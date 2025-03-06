@@ -57,7 +57,7 @@ export const checkIfColorDark = (colorString: string): boolean => {
     const color = Color(colorString);
 
     return color.isDark();
-  } catch (e) {
+  } catch {
     return false;
   }
 };
@@ -145,9 +145,9 @@ const EventButton = (props: EventButtonProps) => {
     e.preventDefault();
     e.stopPropagation();
 
-    // eslint-disable-next-line @typescript-eslint/no-use-before-define
+     
     if (draggingRef.current) {
-      // eslint-disable-next-line @typescript-eslint/no-use-before-define
+       
       draggingRef.current = false;
       return;
     }

@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import { CALENDAR_VIEW, TIME_FORMAT, WEEKDAY_START } from './enums';
 import { DateTime } from 'luxon';
 import { OnPageChangeData } from '../index';
