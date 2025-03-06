@@ -1,6 +1,5 @@
 import { DateTime } from 'luxon';
 import { faker } from '@faker-js/faker';
-import { v4 } from 'uuid';
 
 const colors: string[] = [
   'indigo',
@@ -16,6 +15,15 @@ const colors: string[] = [
   'salmon',
   'gray',
 ];
+
+const generateId = (): string => {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    for (let i = 0; i < 12; i++) {
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return result;
+}
 
 export const generateDemoEvents = (
   date: DateTime = DateTime.now(),
@@ -46,7 +54,7 @@ export const generateDemoEvents = (
     const endDate: DateTime = startDate.plus({ minute: minuteDuration });
 
     const event: any = {
-      id: v4(),
+      id: generateId(),
       startAt: startDate.toUTC().toString(),
       endAt: endDate.toUTC().toString(),
       summary: faker.commerce.department(),
