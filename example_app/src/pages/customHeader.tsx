@@ -6,7 +6,7 @@ import { DateTime } from 'luxon';
 import { CALENDAR_VIEW } from 'kalend/common/enums';
 
 const MainPage = () => {
-  const kalendRef: any = useRef();
+  const kalendRef: any = useRef(undefined);
 
   const [selectedView, setSelectedView] = useState(CALENDAR_VIEW.MONTH);
   const [selectedDate, setSelectedDate] = useState(

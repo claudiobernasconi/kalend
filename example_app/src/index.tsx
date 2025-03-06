@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes } from 'react-router-dom';
 import './index.scss';
 import MainPage from './pages/main';
@@ -7,7 +7,10 @@ import { Route } from 'react-router';
 import Full from './pages/full';
 import CustomHeader from './pages/customHeader';
 
-ReactDOM.render(
+const container = document.getElementById('root')
+const root = createRoot(container!)
+
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
@@ -16,6 +19,5 @@ ReactDOM.render(
         <Route path={'/custom'} element={<CustomHeader />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  </React.StrictMode>
+)
