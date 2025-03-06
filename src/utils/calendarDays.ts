@@ -236,7 +236,12 @@ const getOneDay = (date: DateTime, setSelectedDate: any): DateTime[] => {
 
 export const calculateAgendaDays = (refDate: DateTime): DateTime[] => {
   const firstDayInMonth: DateTime = LuxonHelper.getFirstDayOfMonth(refDate);
-  const daysInMonth: number = refDate.daysInMonth;
+  const daysInMonth: number | undefined = refDate.daysInMonth;
+
+  if (daysInMonth === undefined) {
+    throw new Error('Invalid DateTime provided, unable to retrieve days in month.');
+  }
+
   const monthDays: DateTime[] = [];
 
   // Add missing days to month view

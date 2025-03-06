@@ -40,7 +40,11 @@ export const DatetimeParser = (
       zone: UTC_TIMEZONE,
     });
 
-    return dateFloating.toUTC().toISO();
+    if (!dateFloating.isValid) {
+      throw new Error('Invalid date provided for floating datetime.');
+    }
+
+    return dateFloating.toUTC().toISO()!;
   }
 
   const thisDate: DateTime = DateTime.fromISO(dateString);
@@ -60,10 +64,14 @@ const LuxonHelper = {
     typeof date === 'string' ? DateTime.fromISO(date) : date,
 
   getLastDayOfMonth: (date: DateTime): DateTime => {
-    const daysInMonth: number = date.daysInMonth;
-
+    const daysInMonth: number | undefined = date.daysInMonth;
+  
+    if (daysInMonth === undefined) {
+      throw new Error('Invalid DateTime provided, unable to retrieve days in month.');
+    }
+  
     return date.set({ day: daysInMonth });
-  },
+  },  
 
   getFirstDayOfMonth: (date: DateTime): DateTime => date.set({ day: 1 }),
 
@@ -141,8 +149,22 @@ const LuxonHelper = {
 
     return date.toString() as string;
   },
-  toUtcString: (date: string): string => DateTime.fromISO(date).toUTC().toISO(),
-  toUtc: (date: DateTime): string => date.toUTC().toISO(),
+  toUtcString: (date: string): string => {
+    const dateTime = DateTime.fromISO(date);
+  
+    if (!dateTime.isValid) {
+      throw new Error('Invalid date string provided.');
+    }
+  
+    return dateTime.toUTC().toISO()!;
+  },
+  toUtc: (date: DateTime): string => {
+    if (!date.isValid) {
+      throw new Error('Invalid DateTime object provided.');
+    }
+  
+    return date.toUTC().toISO()!;
+  },
   setTimezone: (dateString: string, timezone: string): string =>
     Datez.setZone(DateTime.fromISO(dateString), timezone).toString(),
   toHumanDate: (dateString: string): string =>

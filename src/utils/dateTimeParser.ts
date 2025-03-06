@@ -29,10 +29,18 @@ export const DatetimeParser = (
       zone: UTC_TIMEZONE,
     });
 
-    return dateFloating.toUTC().toISO();
+    if (!dateFloating.isValid) {
+      throw new Error('Invalid date provided for floating datetime.');
+    }
+
+    return dateFloating.toUTC().toISO()!;
   }
 
   const thisDate: DateTime = DateTime.fromISO(dateString);
+
+  if (!thisDate.isValid) {
+    throw new Error('Invalid date string provided.');
+  }
 
   // Adjust datetime to device timezone
   if (deviceTimezone) {
