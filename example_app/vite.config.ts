@@ -6,8 +6,6 @@ export default defineConfig({
   base: '/',
   plugins: [react()],
   build: {
-    rollupOptions: {
-        input: "/src/index.tsx"
-    }
+    outDir: "dist"
   }
 })

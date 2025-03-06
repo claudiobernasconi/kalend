@@ -2,7 +2,7 @@ import React from 'react';
 
 const GithubButton = () => {
   return (
-    <a href={'/full'} rel="noreferrer">
+    <a href={'/#/full'} rel="noreferrer">
       <div
         style={{
           display: 'flex',
