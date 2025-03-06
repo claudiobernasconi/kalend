@@ -1,4 +1,4 @@
-@import '../../../../styles/colors';
+@use '../../../../styles/colors';
 
 .Kalend__CalendarHeaderWrapper {
   display: flex;
@@ -12,6 +12,6 @@
 
   &-dark {
     @extend .Kalend__CalendarHeaderWrapper;
-    background: $MODAL_DARK;
+    background: colors.$MODAL_DARK;
   }
 }

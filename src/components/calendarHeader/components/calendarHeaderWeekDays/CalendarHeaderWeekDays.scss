@@ -1,4 +1,4 @@
-@import '../../../../styles/colors';
+@use '../../../../styles/colors';
 
 .Kalend__CalendarHeaderWeekDays__wrapper {
   display: flex;
@@ -27,10 +27,10 @@
   font-size: 1.2em;
   align-self: center;
   text-align: center;
-  color: $GRAY_600;
+  color: colors.$GRAY_600;
 
   &-dark {
     @extend .Kalend__CalendarHeaderWeekDays__text;
-    color: $GRAY_400;
+    color: colors.$GRAY_400;
   }
 }

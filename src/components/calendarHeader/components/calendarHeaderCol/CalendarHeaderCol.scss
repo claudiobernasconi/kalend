@@ -1,4 +1,4 @@
-@import '../../../../styles/colors';
+@use '../../../../styles/colors';
 
 .Kalend__CalendarHeaderCol {
   display: flex;
@@ -15,10 +15,10 @@
 
   &-dark {
     @extend .Kalend__CalendarHeaderCol;
-    background: $GRAY_800;
+    background: colors.$GRAY_800;
   }
   &-dark-month {
     @extend .Kalend__CalendarHeaderCol;
-    background: $GRAY_900;
+    background: colors.$GRAY_900;
   }
 }

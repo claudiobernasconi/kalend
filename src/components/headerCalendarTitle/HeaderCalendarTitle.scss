@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@use '../../styles/colors';
 
 .Kalend__HeaderCalendarTitle__container {
   display: flex;
@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   //margin-right: 24px;
-  color: $text;
+  color: colors.$text;
   //padding-left: 24px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -39,12 +39,12 @@
     //word-break: break-all;
     &-dark {
       @extend .Kalend__HeaderCalendarTitle-mobile;
-      color: $textDark;
+      color: colors.$textDark;
     }
   }
 
   &-dark {
     @extend .Kalend__HeaderCalendarTitle;
-    color: $textDark;
+    color: colors.$textDark;
   }
 }

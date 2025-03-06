@@ -1,4 +1,4 @@
-@import '../../../../styles/colors';
+@use '../../../../styles/colors';
 
 .Kalend__CalendarHeaderDates__col {
   display: flex;
@@ -11,7 +11,7 @@
 .Kalend__CalendarHeaderDates__primary {
   width: 28px;
   height: 28px;
-  //background-color: $PRIMARY_LIGHT;
+  //background-color: colors.$PRIMARY_LIGHT;
 
   &:hover {
     @extend .Kalend__CalendarHeaderDates__primary;
@@ -20,7 +20,7 @@
 
   &-dark {
     @extend .Kalend__CalendarHeaderDates__primary;
-    //background-color: $PRIMARY_DARK;
+    //background-color: colors.$PRIMARY_DARK;
     &:hover {
       @extend .Kalend__CalendarHeaderDates__primary-dark;
       opacity: 1;
@@ -50,19 +50,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $GRAY_900;
+  color: colors.$GRAY_900;
 
   &:hover {
     @extend .Kalend__CalendarHeaderDates__circle;
-    background-color: $GRAY_300;
+    background-color: colors.$GRAY_300;
   }
 
   &-dark {
     @extend .Kalend__CalendarHeaderDates__circle;
-    color: $GRAY_100;
+    color: colors.$GRAY_100;
     &:hover {
       @extend .Kalend__CalendarHeaderDates__circle-dark;
-      background-color: $GRAY_700;
+      background-color: colors.$GRAY_700;
     }
   }
 
@@ -75,39 +75,38 @@
 
     &:hover {
       @extend .Kalend__CalendarHeaderDates__circle-small;
-      background-color: $GRAY_300;
+      background-color: colors.$GRAY_300;
     }
     &-dark {
       @extend .Kalend__CalendarHeaderDates__circle-small;
       &:hover {
         @extend .Kalend__CalendarHeaderDates__circle-small-dark;
-        background-color: $GRAY_700;
+        background-color: colors.$GRAY_700;
       }
     }
 
 
     //&-today {
     //  @extend .Kalend__CalendarHeaderDates__circle-small;
-    //  background: $PRIMARY_LIGHT;
+    //  background: colors.$PRIMARY_LIGHT;
     //
     //  &-dark {
     //    @extend .Kalend__CalendarHeaderDates__circle-small-today;
-    //    background: $PRIMARY_DARK;
+    //    background: colors.$PRIMARY_DARK;
     //  }
     //}
   }
 
   //&-today {
   //  @extend .Kalend__CalendarHeaderDates__circle;
-  //  background: $PRIMARY_LIGHT;
+  //  background: colors.$PRIMARY_LIGHT;
   //
   //  &-dark {
   //    @extend .Kalend__CalendarHeaderDates__circle-today;
-  //    background: $PRIMARY_DARK;
+  //    background: colors.$PRIMARY_DARK;
   //  }
   //}
 }
-
 
 .Kalend__CalendarHeaderDates__text-size-small {
   font-size: 1.1em !important;
@@ -125,11 +124,11 @@
 
   &-today {
     @extend .Kalend__CalendarHeaderDates__text;
-    color: $textDark !important;
+    color: colors.$textDark !important;
 
     &-dark {
       @extend .Kalend__CalendarHeaderDates__text-today;
-      color: $text;
+      color: colors.$text;
     }
   }
 }

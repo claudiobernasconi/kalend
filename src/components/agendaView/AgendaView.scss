@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@use '../../styles/colors';
 
 .Kalend__Agenda__container {
   display: flex;
@@ -22,11 +22,11 @@
 }
 
 .Kalend__Agenda__text-empty {
-  color: $GRAY_900;
+  color: colors.$GRAY_900;
   font-size: 1.5em;
   text-align: center;
   &-dark {
     @extend .Kalend__Agenda__text-empty;
-    color: $GRAY_100
+    color: colors.$GRAY_100
   }
 }

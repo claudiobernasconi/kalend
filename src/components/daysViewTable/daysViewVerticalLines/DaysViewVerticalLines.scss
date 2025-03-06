@@ -1,7 +1,4 @@
-@import '../../../styles/colors';
-
-$BORDER_COLOR: $GRAY_300;
-$BORDER_DARK_COLOR: $GRAY_900;
+@use '../../../styles/colors';
 
 .Kalend__DaysViewVerticalLine__container {
   width: 100%;
@@ -12,11 +9,11 @@ $BORDER_DARK_COLOR: $GRAY_900;
 .Kalend__DaysViewVerticalLine__line {
   position: absolute;
   width: 1px;
-  background-color: $BORDER_COLOR;
+  background-color: colors.$GRAY_300;
 
   &-dark {
     @extend .Kalend__DaysViewVerticalLine__line;
-    background-color: $GRAY_700;
+    background-color: colors.$GRAY_700;
     z-index: 2;
   }
 }

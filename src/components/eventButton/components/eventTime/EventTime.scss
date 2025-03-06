@@ -1,4 +1,4 @@
-@import '../../../../styles/colors';
+@use '../../../../styles/colors';
 
 .Kalend__Event__time {
   display: -webkit-box;
@@ -18,7 +18,7 @@
 
     &-dark {
       @extend .Kalend__Event__time__type-normal;
-      //color: $GRAY_900;
+      //color: colors.$GRAY_900;
     }
   }
 
@@ -27,7 +27,7 @@
 
     &-dark {
       @extend .Kalend__Event__time__type-header;
-      color: $GRAY_900;
+      color: colors.$GRAY_900;
     }
   }
 
@@ -35,14 +35,14 @@
     padding: 1px;
     &-dark {
       @extend .Kalend__Event__time__type-month;
-      color: $GRAY_900;
+      color: colors.$GRAY_900;
     }
   }
 
   &-agenda {
     padding: 8px;
     font-size: 0.8em;
-    color: $GRAY_700;
+    color: colors.$GRAY_700;
     flex: none;
     @media (max-width: 750px) {
       padding: 0 8px 0 8px;
@@ -50,7 +50,7 @@
     }
     &-dark {
       @extend .Kalend__Event__time__type-agenda;
-      color: $GRAY_300 !important;
+      color: colors.$GRAY_300 !important;
     }
     @media (max-width: 750px) {
       width: 100%;

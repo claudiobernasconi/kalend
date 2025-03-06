@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@use '../../styles/colors';
 
 .Kalend__ButtonBase {
   min-height: 20px;
@@ -9,24 +9,24 @@
   border: none;
   outline-style: none;
   cursor: pointer;
-  color: $GRAY_800;
+  color: colors.$GRAY_800;
   background-color: transparent;
   position: relative;
   overflow: hidden;
 
   &:hover {
     //@extend .ButtonBase;
-    background-color: $GRAY_200;
+    background-color: colors.$GRAY_200;
   }
 
   &-dark {
     @extend .Kalend__ButtonBase;
-    color: $GRAY_100;
+    color: colors.$GRAY_100;
 
     &:hover {
       @extend .Kalend__ButtonBase-dark;
-      background-color: $GRAY_700;
-      color: $GRAY_100
+      background-color: colors.$GRAY_700;
+      color: colors.$GRAY_100
     }
   }
 
@@ -34,49 +34,49 @@
   &-normal {
     @extend .Kalend__ButtonBase;
     border: none;
-    background-color: $GRAY_800;
+    background-color: colors.$GRAY_800;
     padding: 4px 12px 4px 12px;
-    color: $GRAY_100;
+    color: colors.$GRAY_100;
 
     &:hover {
       @extend .Kalend__ButtonBase-normal;
-      background-color: $GRAY_600;
+      background-color: colors.$GRAY_600;
     }
   }
 
   &-disabled {
     @extend .Kalend__ButtonBase;
-    background-color: $GRAY_400;
-    color: $GRAY_700;
+    background-color: colors.$GRAY_400;
+    color: colors.$GRAY_700;
   }
 
   &-primary {
     @extend .Kalend__ButtonBase;
     padding: 4px 12px 4px 12px;
-    background-color: $PRIMARY_LIGHT;
-    color: $GRAY_200;
+    background-color: colors.$PRIMARY_LIGHT;
+    color: colors.$GRAY_200;
 
     &:hover {
       @extend .Kalend__ButtonBase-primary;
-      background-color: $PRIMARY_LIGHT_OVERLAY;
+      background-color: colors.$PRIMARY_LIGHT_OVERLAY;
     }
 
     &-dark {
       @extend .Kalend__ButtonBase-primary;
-      background-color: $PRIMARY_DARK;
-      color: $GRAY_800;
+      background-color: colors.$PRIMARY_DARK;
+      color: colors.$GRAY_800;
     }
   }
 
   &-transparent {
     @extend .Kalend__ButtonBase;
     padding: 4px 12px 4px 12px;
-    color: $GRAY_700;
+    color: colors.$GRAY_700;
     background-color: transparent;
 
     &:hover {
       //@extend .ButtonBase-transparent;
-      background-color: $GRAY_200;
+      background-color: colors.$GRAY_200;
     }
   }
 }
@@ -101,7 +101,7 @@
 .Kalend__ButtonBase__loader-circle {
   width: 12px;
   height: 12px;
-  background-color: $GRAY_300;
+  background-color: colors.$GRAY_300;
   border-radius: 6px;
   margin: 0 6px 0 6px;
   opacity: 0;
@@ -133,11 +133,11 @@
 @keyframes Kalend__ButtonBase__animation-pulse-loader {
   0% {
     opacity: 0;
-    background-color: $GRAY_500;
+    background-color: colors.$GRAY_500;
   }
   50% {
     opacity: 1;
-    background-color: $GRAY_300;
+    background-color: colors.$GRAY_300;
   }
   100% {
     opacity: 0;
@@ -166,18 +166,18 @@
   align-items: center;
   min-width: 60px;
   width: auto;
-  border: solid 0.4px $GRAY_300;
+  border: solid 0.4px colors.$GRAY_300;
   margin-right: 12px;
   margin-left: 12px;
 
   &-dark {
     @extend .Kalend__ButtonBase-border;
-    border: solid 0.4px $GRAY_500;
-    color: $GRAY_200;
+    border: solid 0.4px colors.$GRAY_500;
+    color: colors.$GRAY_200;
 
     &:hover {
-      border: solid 0.4px $GRAY_600;
-      background-color: $GRAY_600;
+      border: solid 0.4px colors.$GRAY_600;
+      background-color: colors.$GRAY_600;
     }
   }
 }

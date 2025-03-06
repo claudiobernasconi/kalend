@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@use '../../styles/colors';
 
 .Kalend__CalendarViewDropdown__wrapper {
   position: relative;
@@ -29,7 +29,7 @@
 
   &-dark {
     @extend .Kalend__CalendarViewDropdown__container;
-    background-color: $GRAY_700;
+    background-color: colors.$GRAY_700;
   }
 }
 

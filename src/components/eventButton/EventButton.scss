@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@use '../../styles/colors';
 
 .Kalend__Event__animate {
   animation-duration: 0.3s;
@@ -31,7 +31,7 @@
 
     &-dark {
       @extend .Kalend__Event-month;
-      border: solid 1px $GRAY_900;
+      border: solid 1px colors.$GRAY_900;
       filter: saturate(60%) brightness(120%);
     }
   }
@@ -42,7 +42,7 @@
 
     &-dark {
       @extend .Kalend__Event-normal;
-      border: solid 1px $GRAY_900;
+      border: solid 1px colors.$GRAY_900;
       filter: saturate(60%) brightness(120%);
     }
   }
@@ -73,7 +73,7 @@
     min-height: 55px !important;
     justify-content: flex-start;
     align-items: center;
-    color: $GRAY_800 !important;
+    color: colors.$GRAY_800 !important;
     position: relative;
     width: 100%;
 
@@ -86,7 +86,7 @@
       filter: saturate(60%) brightness(120%);
       &:hover {
         @extend .Kalend__Event-agenda-dark;
-        background: $GRAY_800 !important;
+        background: colors.$GRAY_800 !important;
       }
     }
   }

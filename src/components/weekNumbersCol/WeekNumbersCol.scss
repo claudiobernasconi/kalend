@@ -1,21 +1,22 @@
-@import '../../styles/colors';
+@use 'sass:math';
+@use '../../styles/colors';
 
-$month_view__height: 100% / 6;
+$week_numbers_col__height: math.div(100%, 6);
 
 .Kalend__WeekNumbersCol__wrapper {
   width: 30px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  border-right: solid 0.4px $GRAY_200;
+  border-right: solid 0.4px colors.$GRAY_200;
 }
 .Kalend__WeekNumbersCol__container {
   width: 100%;
-  height: $month_view__height;
+  height: $week_numbers_col__height;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  border-bottom: solid 1px $GRAY_200;
+  border-bottom: solid 1px colors.$GRAY_200;
 
   &--no-border {
     @extend .Kalend__WeekNumbersCol__container;
@@ -25,7 +26,7 @@ $month_view__height: 100% / 6;
 
 .Kalend__WeekNumbersCol__text {
   font-size: 0.5rem;
-  color: $GRAY_600;
+  color: colors.$GRAY_600;
   padding-top: 8px;
 
   &-weekdays {

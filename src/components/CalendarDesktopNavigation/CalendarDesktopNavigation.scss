@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@use '../../styles/colors';
 
 .Kalend__CalendarDesktopNavigation__container {
   border-radius: 8px;
@@ -22,7 +22,7 @@
 
     &-dark {
       @extend .Kalend__CalendarDesktopNavigation__container-mobile;
-      background: $GRAY_800;
+      background: colors.$GRAY_800;
       border-radius: 0;
     }
   }
@@ -30,7 +30,7 @@
 
 .Kalend__CalendarDesktopNavigation__container-dark {
   @extend .Kalend__CalendarDesktopNavigation__container;
-  background-color: $GRAY_800;
+  background-color: colors.$GRAY_800;
   border-radius: 0;
 }
 
@@ -52,7 +52,7 @@
   justify-content: center;
   align-items: center;
   width: 60px;
-  border: solid 0.4px $GRAY_300;
+  border: solid 0.4px colors.$GRAY_300;
   margin-right: 12px;
   margin-left: 12px;
 }

@@ -1,7 +1,8 @@
-@import '../../styles/colors';
+@use 'sass:math';
+@use '../../styles/colors';
 
-$month_view__width: 100% / 7;
-$month_view__height: 100% / 6;
+$month_view__width: math.div(100%, 7);
+$month_view__height: math.div(100%, 6);
 
 .Kalend__MonthView__container {
   flex-direction: row;
@@ -23,8 +24,6 @@ $month_view__height: 100% / 6;
   max-height: 17px !important;
   min-height: 17px;
   margin-top: 1px;
-
-
 }
 
 .Kalend__MonthView_more_title {
@@ -36,6 +35,6 @@ $month_view__height: 100% / 6;
 
   &-dark {
     @extend .Kalend__MonthView_more_title;
-    color: $GRAY_200;
+    color: colors.$GRAY_200;
   }
 }
