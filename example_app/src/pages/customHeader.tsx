@@ -73,7 +73,7 @@ const MainPage = () => {
       <div style={{ margin: '0 auto', paddingTop: 32 }}>
         <p style={{ color: 'whitesmoke', fontSize: 15 }}>
           {/* eslint-disable-next-line no-undef */}
-          Version {process.env.REACT_APP_VERSION}
+          Version {import.meta.env.REACT_APP_VERSION}
         </p>
         <div
           style={{
