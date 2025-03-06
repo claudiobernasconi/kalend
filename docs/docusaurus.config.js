@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Kalend',
   tagline: 'React calendar component',
-  url: 'https://docs.kalend.org',
+  url: 'https://kalend-docs.azurewebsites.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
