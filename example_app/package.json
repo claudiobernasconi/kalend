@@ -1,14 +1,14 @@
 {
   "name": "kalend_example",
   "version": "0.17.6",
-  "author": "nibdo",
+  "author": "Claudio Bernasconi",
   "license": "MIT",
   "homepage": "./",
   "private": false,
   "declaration": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/nibdo/kalend/tree/main/example_app"
+    "url": "https://github.com/claudiobernasconi/kalend/tree/main/example_app"
   },
   "dependencies": {
     "@faker-js/faker": "9.5.1",

@@ -1,7 +1,7 @@
 {
   "name": "kalend",
   "version": "0.17.6",
-  "author": "nibdo",
+  "author": "Claudio Bernasconi",
   "license": "MIT",
   "private": false,
   "source": "src/index.tsx",
@@ -18,7 +18,7 @@
   "style": "dist/styles/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nibdo/kalend"
+    "url": "https://github.com/claudiobernasconi/kalend"
   },
   "dependencies": {
     "color": "5.0.0",
