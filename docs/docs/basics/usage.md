@@ -6,12 +6,12 @@ sidebar_position: 1
 
 ### Install
 
-    npm i kalend
+    npm install kalend-evo
 
 ### Example
 
-    import Kalend, { CalendarView } from 'kalend' // import component
-    import 'kalend/dist/styles/index.css'; // import styles
+    import Kalend, { CalendarView } from 'kalend-evo' // import component
+    import 'kalend-evo/dist/styles/index.css'; // import styles
 
         <Kalend
           onEventClick={onEventClick}

@@ -5,14 +5,14 @@ sidebar_position: 5
 
 Support for languages:
 
-- english (en)
-- deutsch (de)
-- spanish (es)
-- french (fr)
-- italian (it)
-- portuguese Brazil (ptBR)
-- russian (ru)
-- chinese (zh)
+- English (en)
+- German (de)
+- Spanish (es)
+- French (fr)
+- Italian (it)
+- Portuguese Brazil (ptBR)
+- Russian (ru)
+- Chinese (zh)
 
 Usage:
 Pass prop language to Kalend

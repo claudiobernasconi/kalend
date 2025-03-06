@@ -5,11 +5,11 @@ sidebar_position: 1
 # Setup
 Clone Kalend repo
 
-    git clone git@github.com:nibdo/kalend.git
+    git clone git@github.com:claudiobernasconi/kalend.git
 
 Install packages
 
-    npm i
+    npm install
 
 ## Usage
 
@@ -22,16 +22,16 @@ After changing code build package
 
 To access locally build package, you have to link it. Navigate to dist folder and run
 
-    npm link kalend
+    npm link kalend-evo
 
 ## Setup in your app
 You might have to adjust your app and link react from kalend node_modules if you see errors in your app
 
 Run from root of your app folder
 
-    npm link YOUR_PATH/kalend/node_modules/react
-    npm link YOUR_PATH/kalend/node_modules/react-dom
-    npm link kalend
+    npm link YOUR_PATH/kalend-evo/node_modules/react
+    npm link YOUR_PATH/kalend-evo/node_modules/react-dom
+    npm link kalend-evo
 
 ## Updating Kalend
 

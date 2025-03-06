@@ -8,9 +8,9 @@ sidebar_position: 6
 
 Clone Kalend repo
         
-    git clone git@github.com:nibdo/kalend.git
+    git clone git@github.com:claudiobernasconi/kalend.git
 
 Go to folder example_app and run 
 
-    npm i
+    npm install
     npm start

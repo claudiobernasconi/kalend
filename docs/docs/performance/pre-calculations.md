@@ -45,7 +45,7 @@ sidebar_position: 2
 
 ### Server
 
-- run npm i kalend-layout
+- run npm install kalend-layout
 - import KalendLayout
 - run calculations on request from client and send result back
 

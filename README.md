@@ -17,6 +17,10 @@
 - Until stable version 1 updates might include breaking changes. 
     
 ### Documentation
+The documentation was rescued from the abandoned project and updated as best effort. Keep in mind that the package name changed from [kalend](https://www.npmjs.com/package/kalend) to [kalend-evo](https://www.npmjs.com/package/kalend-evo).
+
+Please open an issue/pull request if you find anything wrong/outdated in the documentation.
+
 [tbd]
 
 ### LIVE demo
