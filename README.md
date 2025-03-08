@@ -7,6 +7,12 @@
 
 ![Alt text](screenshot.png?raw=true 'Title')
 
+### How to Upgrade From Kalend 0.17.6 to Kalend-evo?
+- npm uninstall `kalend`
+- npm install `kalend-evo`
+- change `import` statements from `kalend` to `kalend-evo`
+- change CSS import statements from `import 'kalend/dist/styles/index.css'` to import `'kalend-evo/dist/styles/index.css'`
+
 ### React support
 - Kalend supports React 19
 
