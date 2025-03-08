@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.20.0
+## 0.20.1
 - Update to React 19
 - Remove unnessesary dependencies
 - Update required dependencies

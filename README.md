@@ -13,7 +13,7 @@
 ### Versioning & History
 - [Changelog](/CHANGELOG.md) & [Changelog Archive](/CHANGELOG_ARCHIVE.md)
 - This project was originally developed by nibdo and forked after it was abandoned for over 2 years.
-- The original package is available as [kalend](https://www.npmjs.com/package/kalend) (v.0.1.3 - v.0.17.6) while current versions are published as [kalend-evo](https://www.npmjs.com/package/kalend-evo) (starting with v.0.20.0).
+- The original package is available as [kalend](https://www.npmjs.com/package/kalend) (v.0.1.3 - v.0.17.6) while current versions are published as [kalend-evo](https://www.npmjs.com/package/kalend-evo) (starting with v.0.20.1).
 - Until stable version 1 updates might include breaking changes. 
     
 ### Documentation
