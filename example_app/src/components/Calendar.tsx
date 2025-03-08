@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { generateDemoEvents } from '../utils/helper';
 import { DateTime } from 'luxon';
-import Kalend, { CalendarView, OnEventDragFinish } from 'kalend';
-import 'kalend/dist/styles/index.css';
+import Kalend, { CalendarView, OnEventDragFinish } from 'kalend-evo';
+import 'kalend-evo/dist/styles/index.css';
 
 const CalendComponent = (props: any) => {
   const [demoEvents, setDemoEvents] = useState([]);
